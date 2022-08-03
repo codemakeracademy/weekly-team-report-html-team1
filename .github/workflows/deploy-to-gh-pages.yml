@@ -2,8 +2,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - feature/gh-pages
       - main
+      - '**'
   pull_request:
     branches:
       - main
