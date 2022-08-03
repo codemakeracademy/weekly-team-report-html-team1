@@ -1,0 +1,14 @@
+.sidenav {
+    height: 100%;
+    width: 250px;
+    max-width: 250px;
+    background-color: #343A3D;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    flex-direction: column;
+}
+.sidenav > nav > a {
+    font-family: 'Franklin Gothic Medium';
+}
