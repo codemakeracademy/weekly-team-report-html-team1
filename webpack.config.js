@@ -8,18 +8,22 @@ const isProduction = process.env.NODE_ENV == "production";
 const stylesHandler = "style-loader";
 
 const config = {
-  entry: "./src/index.js",
+  entry: "./src/js/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
-    open: true,
+    open: false,
     host: "localhost",
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "src/index.html",
       filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "src/templates/launch-guide.html",
+      filename: "launch-guide.html",
     }),
 
     // Add your plugins here
