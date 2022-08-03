@@ -1,0 +1,52 @@
+.sidebar {
+  background: gray;
+}
+
+.header {
+  background: rgb(76, 75, 75);
+  height: 170px;
+  color: #fff;
+}
+
+
+
+.content {
+  background: #f5f7f8;
+  color: #1f2426;
+}
+
+.header img {
+  margin: auto;
+}
+
+.btn-main {
+  --bs-btn-font-weight: 800;
+  --bs-btn-bg: #fcd214;
+  --bs-btn-font-size: 16pt;
+}
+
+.btn-help {
+  --bs-btn-bg: #fcd214;
+  --bs-btn-font-size: 16pt;
+  --bs-btn-border-radius: 99em;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.btn-facebook {
+  --bs-btn-bg: #0b3d67;
+  --bs-btn-font-size: 16pt;
+  --bs-btn-color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+}
+
+.txt-wrapper {
+  width: 430px;
+}
+
+.text {
+  font-size: 16pt;
+}
