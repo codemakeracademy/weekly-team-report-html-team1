@@ -1,0 +1,35 @@
+.sidenav {
+    height: 100%;
+    min-height: 785px;
+    width: 250px;
+    background-color: #343A3D;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    flex-direction: column;
+}
+.sidenav > nav > a {
+    font-family: 'Franklin Gothic Medium';
+    background-color: #343A3D;
+    border-color: #343A3D;
+    color: white;
+}
+.sidenav > nav > a:hover {
+    background-color: #202426;
+    border-color: #202426;
+    color: white;
+}
+.sidenav > nav > a:focus {
+    background-color: #273133;
+    border-color: #202426;
+    color: white;
+}
+.sidenav > nav > a.active {
+    background-color: #202426;
+    border-color: #202426;
+    color: white;
+}
+.sidenav > nav > a.yellow {
+    color: #F6D445;
+}
