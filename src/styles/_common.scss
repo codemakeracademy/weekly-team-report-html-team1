@@ -1,16 +1,25 @@
-.sidenav {
-    height: 100%;
-    min-height: 785px;
+.sidebar {
     width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    overflow-y: auto;
+}
+.header {
+    height: 250px;
+    min-height: 250px;
+    max-height: 250px;
+    background-image: url("../img/congruent_outline.png");
+}
+.mybody {
+    
+}
+
+// should be removed - use bootstrap variables
+.sidenav {
     background-color: #343A3D;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    flex-direction: column;
 }
 .sidenav > nav > a {
-    font-family: 'Franklin Gothic Medium';
+    font-family: "Franklin Gothic Medium";
     background-color: #343A3D;
     border-color: #343A3D;
     color: white;

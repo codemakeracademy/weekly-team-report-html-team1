@@ -5,7 +5,35 @@
         <title>Weekly Report</title>
     </head>
     <body>
-        <%= require("html-loader!./src/components/sidenavmenu.html").default %>
+        <div class="d-flex flex-row flex-fill">
+
+            <!-- Sidebar wrap (.sidebar) -->
+            <div class="sidebar m-0 p-0">
+
+                <!-- Sidebar -->
+                <%= require("html-loader!./src/components/sidenavmenu.html").default %>
+
+            </div>
+
+            <!-- Header+content wrap -->
+            <div class="d-flex flex-column flex-fill m-0 p-0">
+
+                <!-- Header wrap (.header) -->
+                <div class="header m-0 p-0 d-flex flex-column justify-content-center">
+
+                    <!-- Header -->
+
+
+                </div>
+
+                <!-- Content wrap (.mybody) -->
+                <div class="mybody m-0 px-5 pt-4">
+                    
+                    <!-- Content -->
+
+
+                </div>
+            </div>
+        </div>
     </body>
-    
 </html>
