@@ -26,6 +26,10 @@ const config = {
       filename: "invite.html",
     }),
     new HtmlWebpackPlugin({
+      template: "src/templates/report.html",
+      filename: "report.html",
+    }),
+    new HtmlWebpackPlugin({
       template: "src/templates/mycompany.html",
       filename: "mycompany.html",
     }),
