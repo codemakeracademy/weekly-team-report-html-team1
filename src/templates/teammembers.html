@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Weekly Report</title>
+    </head>
+    <body>
+        <div class="d-flex flex-row flex-fill">
+
+            <!-- Sidebar wrap (.sidebar) -->
+            <div class="sidebar m-0 p-0">
+
+                <!-- Sidebar -->
+                <%= require("html-loader!../components/sidenavmenu.html").default %>
+
+            </div>
+
+            <!-- Header+content wrap -->
+            <div class="d-flex flex-column flex-fill m-0 p-0">
+
+                <!-- Header wrap (.header) -->
+                <div class="header m-0 p-0 d-flex flex-column justify-content-center">
+
+                    <!-- Header -->
+                    <p class="display-3 text-center fw-bold text-white">
+                        ANKO Technologies Corp
+                    </p>
+                    <p class="text-center text-white">
+                        Joined January 2020
+                    </p>
+
+                </div>
+
+                <!-- Content wrap (.mybody) -->
+                <div class="mybody m-0 px-5 pt-4">
+
+                    <!-- Content -->
+                    <div class="container">
+
+                        <p class="text-center fw-bold">
+                            TEAM MEMBERS
+                        </p>
+                        <hr class="m-auto mb-5" style="height:6px;width:30px;border-width:0;background-color:#F6D445;">
+
+                        <div>
+
+                            <div class="card mb-2 d-flex flex-row justify-content-between align-items-center">
+                                <div class="mx-3 my-1 p-3 rounded-circle bg-light fw-bold">
+                                    AK
+                                </div>
+                                <div class="flex-fill mx-3 my-1">
+                                    Anatoliy Kolodkin
+                                </div>
+                                <a class="mx-3 my-1 text-reset text-decoration-none" href="editmember.html">
+                                    Edit
+                                </a>
+                            </div>
+
+                            <div class="card mb-2 d-flex flex-row justify-content-between align-items-center">
+                                <div class="mx-3 my-1 p-3 rounded-circle bg-light fw-bold">
+                                    AV
+                                </div>
+                                <div class="flex-fill mx-3 my-1">
+                                    Alexandr Vovchuk
+                                </div>
+                                <a class="mx-3 my-1 text-reset text-decoration-none" href="editmember.html">
+                                    Edit
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -22,12 +22,16 @@ const config = {
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
+      template: "src/templates/invite.html",
+      filename: "invite.html",
+    }),
+    new HtmlWebpackPlugin({
       template: "src/templates/mycompany.html",
       filename: "mycompany.html",
     }),
     new HtmlWebpackPlugin({
-      template: "src/templates/invite.html",
-      filename: "invite.html",
+      template: "src/templates/teammembers.html",
+      filename: "teammembers.html",
     }),
 
     // Add your plugins here
