@@ -37,6 +37,10 @@ const config = {
       template: "src/templates/teammembers.html",
       filename: "teammembers.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "src/templates/guide.html",
+      filename: "guide.html",
+    }),
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
