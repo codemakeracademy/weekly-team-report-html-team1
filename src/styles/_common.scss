@@ -15,32 +15,9 @@
 }
 
 // should be removed - use bootstrap variables
-.sidenav {
-    background-color: #343A3D;
-}
+
 .sidenav > nav > a {
-    font-family: "Franklin Gothic Medium";
-    background-color: #343A3D;
-    border-color: #343A3D;
-    color: white;
-}
-.sidenav > nav > a:hover {
-    background-color: #202426;
-    border-color: #202426;
-    color: white;
-}
-.sidenav > nav > a:focus {
-    background-color: #273133;
-    border-color: #202426;
-    color: white;
-}
-.sidenav > nav > a.active {
-    background-color: #202426;
-    border-color: #202426;
-    color: white;
-}
-.sidenav > nav > a.yellow {
-    color: #F6D445;
+    // font-family: "Franklin Gothic Medium";
 }
 
 .yellowbrick{
