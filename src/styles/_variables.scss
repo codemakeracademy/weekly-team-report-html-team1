@@ -1,9 +1,15 @@
 @import "~bootstrap/scss/functions";
-
-
-
 @import "~bootstrap/scss/variables";
-
 @import "~bootstrap/scss/maps";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/root";
+
+
+//body
+$body-bg: #f5f7f8;
+
+//accordion
+$accordion-button-active-bg: #333a3d;
+$accordion-button-active-color: #F6D445;
+$accordion-icon-active-color: #F6D445;
+$accordion-button-focus-box-shadow: 0 0 0 0 $input-btn-focus-color;
