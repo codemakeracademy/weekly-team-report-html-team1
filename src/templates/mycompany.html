@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html class="h-100">
-    <head>
-        <meta charset="utf-8" />
-        <title>My Company</title>
-    </head>
-    <body class="h-100">
 
-        <!-- Fixed buttons -->
-        <%= require("html-loader!../components/feedback-btn.html").default %>
+<head>
+    <meta charset="utf-8" />
+    <title>My Company</title>
+</head>
+
+<body class="h-100">
+
+    <!-- Fixed buttons -->
+    <%= require("html-loader!../components/feedback-btn.html").default %>
         <%= require("html-loader!../components/help-btn.html").default %>
 
-        <!-- Sidebar -->
-        <div class="container-fluid">
-            <div class="row">
-                <%= require("html-loader!../components/sidenavmenu.html").default %>
+            <!-- Sidebar -->
+            <div class="container-fluid">
+                <div class="row">
+                    <%= require("html-loader!../components/sidenavmenu.html").default %>
+                </div>
             </div>
-        </div>
 
-        <!-- Content -->
-        <div class="container-fluid">
-            <div class="row d-flex flex-row-reverse">
-                <div class="col-10 p-0">
-                    <!-- Header wrap (.header) -->
-                    <div class="header m-0 p-0 d-flex flex-column justify-content-center">
+            <!-- Content -->
+            <div class="container-fluid">
+                <div class="row d-flex flex-row-reverse">
+                    <div class="col-10 p-0">
+                        <!-- Header wrap (.header) -->
+                        <div class="header m-0 p-0 d-flex flex-column justify-content-center">
 
-                        <!-- Header -->
-                        <p class="display-3 text-center fw-bold text-white">
-                            ANKO Technologies Corp
-                        </p>
-                        <p class="text-center text-white">
-                            Joined January 2020
-                        </p>
-
-                    </div>
-
-                    <!-- Content wrap (.mybody) -->
-                    <div class="mybody m-0 px-5 pt-4">
-
-                        <!-- Content -->
-
-                        <p class="fs-2 fw-bold">
-                            Edit ANKO Technologies Corp's information.
-                        </p>
-                        <p class="mb-5">
-                            You may edit the company name, as well as the deactivate/activate the Weekly Report Tool functionality. If you need to edit a team member's information, you can access that information by seeing the list of team members.
-                        </p>
-
-                        <p class="mb-0 fw-bold text-uppercase">
-                            Rename ANKO Technologies Corp
-                        </p>
-                        <hr class="mt-1 mb-3">
-                        <form class="mb-5">
-                            <div class="mb-3">
-                                <label class="form-label fw-bold">
-                                    Change company name
-                                </label>
-                                <input type="text" class="form-control w-50">
-                            </div>
-                            <button type="submit" class="btn btn-outline-dark fw-bold">
-                                Save name change
-                            </button>
-                        </form>
-
-                        <p class="mb-0 fw-bold text-uppercase">
-                            See a list of ANKO Technologies Corp's team members
-                        </p>
-                        <hr class="mt-1 mb-3">
-                        <div class="mb-5">
-                            <p>
-                                If you need to edit a particular tema member, you can see a complete list of team members and visit their profile to make edits. <b>You will not be able to see a team member's weekly report.</b>
+                            <!-- Header -->
+                            <p class="display-3 text-center fw-bold text-white">
+                                ANKO Technologies Corp
                             </p>
-                            <a class="btn btn-outline-dark fw-bold" href="teammembers.html">
-                                See all team members
-                            </a>
+                            <p class="text-center text-white">
+                                Joined January 2020
+                            </p>
+
                         </div>
 
+                        <!-- Content wrap (.mybody) -->
+                        <div class="mybody m-0 px-5 pt-4">
+
+                            <!-- Content -->
+
+                            <p class="fs-2 fw-bold">
+                                Edit ANKO Technologies Corp's information.
+                            </p>
+                            <p class="mb-5">
+                                You may edit the company name, as well as the deactivate/activate the Weekly Report Tool
+                                functionality. If you need to edit a team member's information, you can access that
+                                information by seeing the list of team members.
+                            </p>
+
+                            <p class="mb-0 fw-bold text-uppercase">
+                                Rename ANKO Technologies Corp
+                            </p>
+                            <hr class="mt-1 mb-3">
+                            <form class="mb-5">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">
+                                        Change company name
+                                    </label>
+                                    <input type="text" class="form-control w-50">
+                                </div>
+                                <button type="submit" class="btn btn-outline-dark fw-bold">
+                                    Save name change
+                                </button>
+                            </form>
+
+                            <p class="mb-0 fw-bold text-uppercase">
+                                See a list of ANKO Technologies Corp's team members
+                            </p>
+                            <hr class="mt-1 mb-3">
+                            <div class="mb-5">
+                                <p>
+                                    If you need to edit a particular tema member, you can see a complete list of team
+                                    members and visit their profile to make edits. <b>You will not be able to see a team
+                                        member's weekly report.</b>
+                                </p>
+                                <a class="btn btn-outline-dark fw-bold" href="teammembers.html">
+                                    See all team members
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </body>
+</body>
+
 </html>

@@ -1,291 +1,306 @@
 <!DOCTYPE html>
 <html class="h-100">
-    <head>
-        <meta charset="utf-8" />
-        <title>Fill out a Report</title>
-    </head>
-    <body class="h-100">
 
-        <!-- Fixed buttons -->
-        <%= require("html-loader!../components/feedback-btn.html").default %>
+<head>
+    <meta charset="utf-8" />
+    <title>Fill out a Report</title>
+</head>
+
+<body class="h-100">
+
+    <!-- Fixed buttons -->
+    <%= require("html-loader!../components/feedback-btn.html").default %>
         <%= require("html-loader!../components/help-btn.html").default %>
 
-        <!-- Sidebar -->
-        <div class="container-fluid">
-            <div class="row">
-                <%= require("html-loader!../components/sidenavmenu.html").default %>
+            <!-- Sidebar -->
+            <div class="container-fluid">
+                <div class="row">
+                    <%= require("html-loader!../components/sidenavmenu.html").default %>
+                </div>
             </div>
-        </div>
 
-        <!-- Content -->
-        <div class="container-fluid">
-            <div class="row d-flex flex-row-reverse">
-                <div class="col-10 p-0">
-                    <!-- Header wrap (.header) -->
-                    <!-- <div class="header m-0 p-0 d-flex flex-column justify-content-center"> -->
+            <!-- Content -->
+            <div class="container-fluid">
+                <div class="row d-flex flex-row-reverse">
+                    <div class="col-10 p-0">
+                        <!-- Header wrap (.header) -->
+                        <!-- <div class="header m-0 p-0 d-flex flex-column justify-content-center"> -->
 
                         <!-- Header -->
 
 
-                    <!-- </div> -->
+                        <!-- </div> -->
 
-                    <!-- Content wrap (.mybody) -->
-                    <div class="mybody m-0 px-5 pt-4">
+                        <!-- Content wrap (.mybody) -->
+                        <div class="mybody m-0 px-5 pt-4">
 
-                        <!-- Content -->
-                        <div class="container-sm">
+                            <!-- Content -->
+                            <div class="container-sm">
 
-                            <div class="mb-5">
-                                <p class="h1 text-center fw-bold mb-0">
-                                    Welcome back,
-                                </p>
-                                <p class="h1 text-center fw-bold mb-4">
-                                    Anatoliy.
-                                </p>
-                                <p class="text-center">
-                                    Let your leader know where you're winning and struggling this week -- in less than 10 minutes.
-                                </p>
-                            </div>
-
-                            <div class="mb-5 d-flex flex-column">
-
-                                <div class="d-flex flex-column text-center mb-5">
-                                    <p class="fs-3 fw-bold">
-                                        How was your morale this week?
+                                <div class="mb-5">
+                                    <p class="h1 text-center fw-bold mb-0">
+                                        Welcome back,
                                     </p>
-                                    <div class="d-flex flex-row gap-1 gap-md-2 gap-xl-3 gap-xxl-4 justify-content-center text-nowrap" style="min-height:150px;max-height:150px;">
-                                        <input class="btn-check" id="stress1" type="radio" name="stress">
-                                        <label for="stress1">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-angry display-3"></i>
-                                                    <p>
-                                                        Very low
-                                                    </p>
+                                    <p class="h1 text-center fw-bold mb-4">
+                                        Anatoliy.
+                                    </p>
+                                    <p class="text-center">
+                                        Let your leader know where you're winning and struggling this week -- in less
+                                        than 10 minutes.
+                                    </p>
+                                </div>
+
+                                <div class="mb-5 d-flex flex-column">
+
+                                    <div class="d-flex flex-column text-center mb-5">
+                                        <p class="fs-3 fw-bold">
+                                            How was your morale this week?
+                                        </p>
+                                        <div class="d-flex flex-row gap-1 gap-md-2 gap-xl-3 gap-xxl-4 justify-content-center text-nowrap"
+                                            style="min-height:150px;max-height:150px;">
+                                            <input class="btn-check" id="stress1" type="radio" name="stress">
+                                            <label for="stress1">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-angry display-3"></i>
+                                                        <p>
+                                                            Very low
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress2" type="radio" name="stress">
-                                        <label for="stress2">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-frown display-3"></i>
-                                                    <p>
-                                                        Low
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress2" type="radio" name="stress">
+                                            <label for="stress2">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-frown display-3"></i>
+                                                        <p>
+                                                            Low
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress3" type="radio" name="stress">
-                                        <label for="stress3">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-neutral display-3"></i>
-                                                    <p>
-                                                        Okay
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress3" type="radio" name="stress">
+                                            <label for="stress3">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-neutral display-3"></i>
+                                                        <p>
+                                                            Okay
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress4" type="radio" name="stress">
-                                        <label for="stress4">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-smile display-3"></i>
-                                                    <p>
-                                                        Good
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress4" type="radio" name="stress">
+                                            <label for="stress4">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-smile display-3"></i>
+                                                        <p>
+                                                            Good
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress5" type="radio" name="stress">
-                                        <label for="stress5">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-laughing display-3 "></i>
-                                                    <p>
-                                                        Great
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress5" type="radio" name="stress">
+                                            <label for="stress5">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-laughing display-3 "></i>
+                                                        <p>
+                                                            Great
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="d-flex flex-column text-center mb-5">
-                                    <p class="fs-3 fw-bold">
-                                        How was your stress this week?
-                                    </p>
-                                    <div class="d-flex flex-row gap-1 gap-md-2 gap-xl-3 gap-xxl-4 justify-content-center text-nowrap" style="min-height:150px;max-height:150px;">
-                                        <input class="btn-check" id="stress1" type="radio" name="stress">
-                                        <label for="stress1">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-angry display-3"></i>
-                                                    <p>
-                                                        Very low
-                                                    </p>
+                                    <div class="d-flex flex-column text-center mb-5">
+                                        <p class="fs-3 fw-bold">
+                                            How was your stress this week?
+                                        </p>
+                                        <div class="d-flex flex-row gap-1 gap-md-2 gap-xl-3 gap-xxl-4 justify-content-center text-nowrap"
+                                            style="min-height:150px;max-height:150px;">
+                                            <input class="btn-check" id="stress1" type="radio" name="stress">
+                                            <label for="stress1">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-angry display-3"></i>
+                                                        <p>
+                                                            Very low
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress2" type="radio" name="stress">
-                                        <label for="stress2">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-frown display-3"></i>
-                                                    <p>
-                                                        Low
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress2" type="radio" name="stress">
+                                            <label for="stress2">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-frown display-3"></i>
+                                                        <p>
+                                                            Low
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress3" type="radio" name="stress">
-                                        <label for="stress3">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-neutral display-3"></i>
-                                                    <p>
-                                                        Okay
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress3" type="radio" name="stress">
+                                            <label for="stress3">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-neutral display-3"></i>
+                                                        <p>
+                                                            Okay
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress4" type="radio" name="stress">
-                                        <label for="stress4">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-smile display-3"></i>
-                                                    <p>
-                                                        Good
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress4" type="radio" name="stress">
+                                            <label for="stress4">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-smile display-3"></i>
+                                                        <p>
+                                                            Good
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress5" type="radio" name="stress">
-                                        <label for="stress5">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-laughing display-3 "></i>
-                                                    <p>
-                                                        Great
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress5" type="radio" name="stress">
+                                            <label for="stress5">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-laughing display-3 "></i>
+                                                        <p>
+                                                            Great
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="d-flex flex-column text-center mb-5">
-                                    <p class="fs-3 fw-bold">
-                                        How was your workload this week?
-                                    </p>
-                                    <div class="d-flex flex-row gap-1 gap-md-2 gap-xl-3 gap-xxl-4 justify-content-center text-nowrap" style="min-height:150px;max-height:150px;">
-                                        <input class="btn-check" id="stress1" type="radio" name="stress">
-                                        <label for="stress1">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-angry display-3"></i>
-                                                    <p>
-                                                        Very low
-                                                    </p>
+                                    <div class="d-flex flex-column text-center mb-5">
+                                        <p class="fs-3 fw-bold">
+                                            How was your workload this week?
+                                        </p>
+                                        <div class="d-flex flex-row gap-1 gap-md-2 gap-xl-3 gap-xxl-4 justify-content-center text-nowrap"
+                                            style="min-height:150px;max-height:150px;">
+                                            <input class="btn-check" id="stress1" type="radio" name="stress">
+                                            <label for="stress1">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-angry display-3"></i>
+                                                        <p>
+                                                            Very low
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress2" type="radio" name="stress">
-                                        <label for="stress2">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-frown display-3"></i>
-                                                    <p>
-                                                        Low
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress2" type="radio" name="stress">
+                                            <label for="stress2">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-frown display-3"></i>
+                                                        <p>
+                                                            Low
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress3" type="radio" name="stress">
-                                        <label for="stress3">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-neutral display-3"></i>
-                                                    <p>
-                                                        Okay
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress3" type="radio" name="stress">
+                                            <label for="stress3">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-neutral display-3"></i>
+                                                        <p>
+                                                            Okay
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress4" type="radio" name="stress">
-                                        <label for="stress4">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-smile display-3"></i>
-                                                    <p>
-                                                        Good
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress4" type="radio" name="stress">
+                                            <label for="stress4">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-smile display-3"></i>
+                                                        <p>
+                                                            Good
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
-                                        <input class="btn-check" id="stress5" type="radio" name="stress">
-                                        <label for="stress5">
-                                            <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
-                                                <div class="card d-flex flex-column justify-content-center">
-                                                    <i class="bi bi-emoji-laughing display-3 "></i>
-                                                    <p>
-                                                        Great
-                                                    </p>
+                                            </label>
+                                            <input class="btn-check" id="stress5" type="radio" name="stress">
+                                            <label for="stress5">
+                                                <div class="ratio ratio-1x1" style="min-width:150px;max-width:150px;">
+                                                    <div class="card d-flex flex-column justify-content-center">
+                                                        <i class="bi bi-emoji-laughing display-3 "></i>
+                                                        <p>
+                                                            Great
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </label>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="d-flex flex-column text-center mb-5">
-                                    <p class="fs-3 fw-bold">
-                                        What was your high this week?
-                                    </p>
-                                    <textarea class="form-control" maxlength="600" placeholder="What was your personal of professional high this week? What's the one thing you accomplished at work this week?" rows="5" required></textarea>
-                                </div>
+                                    <div class="d-flex flex-column text-center mb-5">
+                                        <p class="fs-3 fw-bold">
+                                            What was your high this week?
+                                        </p>
+                                        <textarea class="form-control" maxlength="600"
+                                            placeholder="What was your personal of professional high this week? What's the one thing you accomplished at work this week?"
+                                            rows="5" required></textarea>
+                                    </div>
 
-                                <div class="d-flex flex-column text-center mb-5">
-                                    <p class="fs-3 fw-bold">
-                                        What was your low this week?
-                                    </p>
-                                    <textarea class="form-control" maxlength="600" placeholder="What was your personal of professional low this week?" rows="5" required></textarea>
-                                </div>
+                                    <div class="d-flex flex-column text-center mb-5">
+                                        <p class="fs-3 fw-bold">
+                                            What was your low this week?
+                                        </p>
+                                        <textarea class="form-control" maxlength="600"
+                                            placeholder="What was your personal of professional low this week?" rows="5"
+                                            required></textarea>
+                                    </div>
 
-                                <div class="d-flex flex-column text-center mb-5">
-                                    <p class="fs-3 fw-bold">
-                                        Anything else?
-                                    </p>
-                                    <textarea class="form-control" maxlength="600" placeholder="Is there anything else you would like to share with your leader? *Optional" rows="5"></textarea>
-                                </div>
+                                    <div class="d-flex flex-column text-center mb-5">
+                                        <p class="fs-3 fw-bold">
+                                            Anything else?
+                                        </p>
+                                        <textarea class="form-control" maxlength="600"
+                                            placeholder="Is there anything else you would like to share with your leader? *Optional"
+                                            rows="5"></textarea>
+                                    </div>
 
-                                <div class="d-flex flex-column text-center mb-5 col-12 col-sm-8 col-lg-6 col-xxl-4 m-auto">
-                                    <p class="fs-3 fw-bold">
-                                        Date range
-                                    </p>
-                                    <p class="text-start">
-                                        Choose date
-                                    </p>
-                                    <input class="form-control" type="week">
-                                </div>
+                                    <div
+                                        class="d-flex flex-column text-center mb-5 col-12 col-sm-8 col-lg-6 col-xxl-4 m-auto">
+                                        <p class="fs-3 fw-bold">
+                                            Date range
+                                        </p>
+                                        <p class="text-start">
+                                            Choose date
+                                        </p>
+                                        <input class="form-control" type="week">
+                                    </div>
 
-                                <div class="d-flex flex-column text-center mb-5 col-12 col-sm-8 col-lg-6 col-xxl-4 m-auto">
-                                    <p class="text-danger">
-                                        All field are required unless marked as optional.
-                                    </p>
-                                    <button class="btn btn-primary" type="submit">
-                                        Send Weekly Report
-                                    </button>
+                                    <div
+                                        class="d-flex flex-column text-center mb-5 col-12 col-sm-8 col-lg-6 col-xxl-4 m-auto">
+                                        <p class="text-danger">
+                                            All field are required unless marked as optional.
+                                        </p>
+                                        <button class="btn btn-primary" type="submit">
+                                            Send Weekly Report
+                                        </button>
+                                    </div>
+
                                 </div>
 
                             </div>
 
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
 
-    </body>
+</body>
+
 </html>
