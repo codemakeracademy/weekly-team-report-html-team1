@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/functions";
+
+// colors
+$primary: #fcd214;
+$light: #f5f7f8;
+$secondary: #d5d9db;
+$dark: #333a3d;
+$info: #0a3d67;
+$danger: #cc392f;
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+//body
+$body-bg: #f5f7f8;
+
+//accordion
+$accordion-button-active-bg: #333a3d;
+$accordion-button-active-color: #f6d445;
+$accordion-icon-active-color: #f6d445;
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-focus-box-shadow: 0 0 0 0 $input-btn-focus-color;

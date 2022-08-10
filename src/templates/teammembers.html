@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Team members</title>
+</head>
+
+<body class="h-100">
+
+    <!-- Fixed buttons -->
+    <%= require("html-loader!../components/feedback-btn.html").default %>
+        <%= require("html-loader!../components/help-btn.html").default %>
+
+            <!-- Sidebar -->
+            <div class="container-fluid">
+                <div class="row">
+                    <%= require("html-loader!../components/sidenavmenu.html").default %>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="container-fluid">
+                <div class="row d-flex flex-row-reverse">
+                    <div class="col-10 p-0">
+                        <!-- Header wrap (.header) -->
+                        <div class="header m-0 p-0 d-flex flex-column justify-content-center">
+
+                            <!-- Header -->
+                            <div class="d-flex flex-column justify-content-center text-center text-white">
+                                <p class="display-3 fw-bold">
+                                    ANKO Technologies Corp
+                                </p>
+                                <p>
+                                    Joined January 2020
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Content wrap (.mybody) -->
+                        <div class="mybody m-0 px-5 pt-4">
+
+                            <!-- Content -->
+                            <div class="container">
+
+                                <p class="text-center fw-bold text-uppercase">
+                                    Team members
+                                </p>
+                                <hr class="m-auto mb-5 bg-primary"
+                                    style="height: 6px; width: 30px; border-width: 0;">
+
+                                <div>
+
+                                    <div class="card d-flex flex-row justify-content-between align-items-center mb-2 px-3 py-1 gap-3">
+                                        <img class="rounded-circle" src="<%=require('../img/mock-ava.png')%>" alt="User Icon" style="height: 50px; width: 50px;">
+                                        <div class="flex-fill">
+                                            Anatoliy Kolodkin
+                                        </div>
+                                        <a class="text-reset text-decoration-none" href="editmember.html">
+                                            Edit
+                                        </a>
+                                    </div>
+
+                                    <div class="card d-flex flex-row justify-content-between align-items-center mb-2 px-3 py-1 gap-3">
+                                        <img class="rounded-circle" src="<%=require('../img/mock-ava.png')%>" alt="User Icon" style="height: 50px; width: 50px;">
+                                        <div class="flex-fill">
+                                            Alexandr Vovchuk
+                                        </div>
+                                        <a class="text-reset text-decoration-none" href="editmember.html">
+                                            Edit
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Reports</title>
+</head>
+
+<body class="h-100">
+
+    <!-- Fixed buttons -->
+    <%= require("html-loader!../components/feedback-btn.html").default %>
+        <%= require("html-loader!../components/help-btn.html").default %>
+
+            <!-- Sidebar -->
+            <div class="container-fluid">
+                <div class="row">
+                    <%= require("html-loader!../components/sidenavmenu.html").default %>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="container-fluid">
+                <div class="row d-flex flex-row-reverse">
+                    <div class="col-10 p-0">
+                        <!-- Header wrap (.header) -->
+                        <div class="header m-0 p-0 d-flex flex-column justify-content-center">
+
+                            <!-- Header -->
+                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-white align-self-center avatar-shild">
+                                <img class="rounded-circle avatar-img" src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
+                            </div>
+                            <p class="display-4 text-center fw-bold text-white">
+                                Anatoliy Kolodkin
+                            </p>
+                            <p class="fs-6 text-center fw-bold text-white">
+                                anatoliy@anksoftware.com
+                            </p>
+
+
+                        </div>
+
+                        <!-- Content wrap (.mybody) -->
+                        <div class="mybody m-0 px-5 pt-4">
+
+                            <!-- Content -->
+                            <p class="text-center fw-bold fs-4">
+                                PAST WEEKLY REPORTS
+                            </p>
+                            <hr class="m-auto mb-5 hr-line">
+                            <div class="d-flex justify-content-end">
+                                <button class="btn text-light fw-bold bg-dark" data-bs-toggle="collapse"
+                                    data-bs-target=".accordion-collapse">Expande
+                                    All</button>
+                            </div>
+                            <div class="card mb-4 mt-4 shadow border-0">
+                                <div class="card-body d-flex justify-content-end">
+                                    <div class="table-header">
+                                        <span class="fw-bold fs-6 mx-4">Morale</span>
+                                        <span class="fw-bold fs-6 mx-4">Stress</span>
+                                        <span class="fw-bold fs-6 mx-4">Workload</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion accordion-flush shadow my-4" id="accordion1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+
+                                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                                <div class="fs-5">
+                                                    May 3 - May 9, 2020
+                                                </div>
+                                                <div>
+                                                    <img class="mx-4 rounded-circle smile" src="<%=require('../img/very-happy.svg')%>" alt="avatar"></img>
+                                                    <img class="mx-4 rounded-circle smile" src="<%=require('../img/neutral.svg')%>" alt="avatar"></img>
+                                                    <img class="mx-4 rounded-circle smile" src="<%=require('../img/sad.svg')%>" alt="avatar"></img>
+                                                    <span class="me-2 accordion-collapse collapse"
+                                                        id="collapseOne">Expand</span>
+                                                    <span class="me-2 accordion-collapse collapse show"
+                                                        id="collapseOne">Collapse</span>
+                                                </div>
+                                            </div>
+                                        </button>
+
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row mb-3 ms-2">
+                                                <div class="col-3 rounded-1 shadow p-4 status-panel">
+                                                    <img class="rounded-circle smile"
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="happy_icon">
+                                                    <span
+                                                        class="align-self-center fw-bold text-light fs-4 ms-5">MORALE</span>
+                                                </div>
+                                                <div class="col-9">
+                                                    <span class="fst-italic  fs-5 text-secondary">
+                                                        There were no comments added about morale.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <div class="col-3 rounded-1 shadow p-4 status-panel">
+                                                    <img class="rounded-circle smile"
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="happy_icon">
+                                                    <span
+                                                        class="align-self-center fw-bold text-light fs-4 ms-5">STRESS</span>
+                                                </div>
+                                                <div class="col-9">
+                                                    <span class="fst-italic  fs-5 text-secondary">
+                                                        There were no comments added about stress.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <div class="col-3 rounded-1 shadow p-4 status-panel">
+                                                    <img class="rounded-circle smile"
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="happy_icon">
+                                                    <span
+                                                        class="align-self-center fw-bold text-light fs-4 ms-5">WORKLOAD</span>
+                                                </div>
+                                                <div class="col-9">
+                                                    <span class="fst-italic  fs-5 text-secondary">
+                                                        There were no comments added about workload.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row mb-3 ms-2">
+                                                <p class="fs-5">Weekly High</p>
+                                                <p class="fs-6">Identified our goal and priorities</p>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <p class="fs-5">Weekly Low</p>
+                                                <p class="fs-6">Cold weather</p>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <p class="fs-5">Anything Else</p>
+                                                <p class="fs-6">Looking forward to launching our first product</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion accordion-flush shadow my-4" id="accordion2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+
+                                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                                <div class="fs-5">
+                                                    May 3 - May 9, 2020
+                                                </div>
+                                                <div>
+                                                    <img class="mx-4 rounded-circle smile" 
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="avatar"></img>
+                                                    <img class="mx-4 rounded-circle smile" 
+                                                        src="<%=require('../img/neutral.svg')%>" alt="avatar"></img>
+                                                    <img class="mx-4 rounded-circle smile" 
+                                                        src="<%=require('../img/sad.svg')%>" alt="avatar"></img>
+                                                    <span class="me-2 accordion-collapse collapse show"
+                                                        id="collapseTwo">Expand</span>
+                                                    <span class="me-2 accordion-collapse collapse"
+                                                        id="collapseTwo">Collapse</span>
+                                                </div>
+                                            </div>
+                                        </button>
+
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row mb-3 ms-2">
+                                                <div class="col-3 rounded-1 shadow p-4 status-panel">
+                                                    <img class="rounded-circle smile" 
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="happy_icon">
+                                                    <span
+                                                        class="align-self-center fw-bold text-light fs-4 ms-5">MORALE</span>
+                                                </div>
+                                                <div class="col-9">
+                                                    <span class="fst-italic  fs-5 text-secondary">
+                                                        There were no comments added about morale.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <div class="col-3 rounded-1 shadow p-4 status-panel">
+                                                    <img class="rounded-circle smile"
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="happy_icon">
+                                                    <span
+                                                        class="align-self-center fw-bold text-light fs-4 ms-5">STRESS</span>
+                                                </div>
+                                                <div class="col-9">
+                                                    <span class="fst-italic  fs-5 text-secondary">
+                                                        There were no comments added about stress.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <div class="col-3 rounded-1 shadow p-4 status-panel">
+                                                    <img class="rounded-circle smile"
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="happy_icon">
+                                                    <span
+                                                        class="align-self-center fw-bold text-light fs-4 ms-5">WORKLOAD</span>
+                                                </div>
+                                                <div class="col-9">
+                                                    <span class="fst-italic  fs-5 text-secondary">
+                                                        There were no comments added about workload.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row mb-3 ms-2">
+                                                <p class="fs-5">Weekly High</p>
+                                                <p class="fs-6">Identified our goal and priorities</p>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <p class="fs-5">Weekly Low</p>
+                                                <p class="fs-6">Cold weather</p>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <p class="fs-5">Anything Else</p>
+                                                <p class="fs-6">Looking forward to launching our first product</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion accordion-flush shadow my-4" id="accordion3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+
+                                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                                <div class="fs-5">
+                                                    May 3 - May 9, 2020
+                                                </div>
+                                                <div>
+                                                    <img class="mx-4 rounded-circle smile"
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="avatar"></img>
+                                                    <img class="mx-4 rounded-circle smile"
+                                                        src="<%=require('../img/neutral.svg')%>" alt="avatar"></img>
+                                                    <img class="mx-4 rounded-circle smile"
+                                                        src="<%=require('../img/sad.svg')%>" alt="avatar"></img>
+                                                    <span class="me-2 accordion-collapse collapse show"
+                                                        id="collapseThree">Expand</span>
+                                                    <span class="me-2 accordion-collapse collapse"
+                                                        id="collapseThree">Collapse</span>
+                                                </div>
+                                            </div>
+                                        </button>
+
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row mb-3 ms-2">
+                                                <div class="col-3 rounded-1 shadow p-4 status-panel">
+                                                    <img class="rounded-circle smile"
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="happy_icon">
+                                                    <span
+                                                        class="align-self-center fw-bold text-light fs-4 ms-5">MORALE</span>
+                                                </div>
+                                                <div class="col-9">
+                                                    <span class="fst-italic  fs-5 text-secondary">
+                                                        There were no comments added about morale.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <div class="col-3 rounded-1 shadow p-4 status-panel">
+                                                    <img class="rounded-circle smile"
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="happy_icon">
+                                                    <span
+                                                        class="align-self-center fw-bold text-light fs-4 ms-5">STRESS</span>
+                                                </div>
+                                                <div class="col-9">
+                                                    <span class="fst-italic  fs-5 text-secondary">
+                                                        There were no comments added about stress.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <div class="col-3 rounded-1 shadow p-4 status-panel">
+                                                    <img class="rounded-circle smile"
+                                                        src="<%=require('../img/very-happy.svg')%>" alt="happy_icon">
+                                                    <span
+                                                        class="align-self-center fw-bold text-light fs-4 ms-5">WORKLOAD</span>
+                                                </div>
+                                                <div class="col-9">
+                                                    <span class="fst-italic  fs-5 text-secondary">
+                                                        There were no comments added about workload.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row mb-3 ms-2">
+                                                <p class="fs-5">Weekly High</p>
+                                                <p class="fs-6">Identified our goal and priorities</p>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <p class="fs-5">Weekly Low</p>
+                                                <p class="fs-6">Cold weather</p>
+                                            </div>
+                                            <div class="row mb-3 ms-2">
+                                                <p class="fs-5">Anything Else</p>
+                                                <p class="fs-6">Looking forward to launching our first product</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>

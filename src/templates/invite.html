@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Invite Your Team</title>
+</head>
+
+<body class="h-100">
+
+    <!-- Fixed buttons -->
+    <%= require("html-loader!../components/feedback-btn.html").default %>
+        <%= require("html-loader!../components/help-btn.html").default %>
+
+            <!-- Sidebar -->
+            <div class="container-fluid">
+                <div class="row">
+                    <%= require("html-loader!../components/sidenavmenu.html").default %>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="container-fluid">
+                <div class="row d-flex flex-row-reverse">
+                    <div class="col-10 p-0">
+                        <!-- Header wrap (.header) -->
+                        <div class="header m-0 p-0 d-flex flex-column justify-content-center">
+
+                            <!-- Header -->
+                            <p class="display-3 text-center fw-bold text-white">
+                                Invite Your Team
+                            </p>
+
+                        </div>
+
+                        <!-- Content wrap (.mybody) -->
+                        <div class="mybody m-0 px-5 pt-4">
+
+                            <!-- Content -->
+                            <div class="container-sm">
+                                <div id="inviteSuccess" class="collapse">
+                                    <div class="card mb-4 p-2 shadow-sm">
+                                        <div class="card-body">
+                                            <p class="fw-bold">Success! Your team member has been invited to the Weekly
+                                                Report Tool.</p>
+                                            <p>Once they accept eour invation, they'll be able to create their reports.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-0 mb-5">
+                                        <p class="accordion-header" id="headingOne">
+                                        <p type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            <i class="bi bi-caret-right-fill"></i>The team member didn't receive yout
+                                            invite?
+                                        </p>
+                                        </p>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="card shadow-sm">
+                                                    <div class="card-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-5 p-2">
+                                    <div class="card-body">
+                                        <p class="fw-bold">Enter team member you'd like to invite.</p>
+                                        <p>Don't worry! You'll able to add more team members later.</p>
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">
+                                                First name
+                                            </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">
+                                                Last Name
+                                            </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">
+                                                Email
+                                            </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary fw-bold" data-bs-toggle="collapse"
+                                            data-bs-target="#inviteSuccess" aria-expanded="false"
+                                            aria-controls="inviteSuccess">
+                                            Invite
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>
