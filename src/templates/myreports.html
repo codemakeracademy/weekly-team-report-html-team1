@@ -27,8 +27,13 @@
                         <div class="header m-0 p-0 d-flex flex-column justify-content-center">
 
                             <!-- Header -->
-                            <img style="margin: auto; width: 100px; border-radius: 50%;"
-                                src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
+                            <!-- <img style="margin: auto; width: 100px; border-radius: 50%;"
+                                src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img> -->
+                            <div class="d-flex justify-content-center align-items-center rounded-circle bg-white align-self-center"
+                                style="width: 100px; height: 100px;">
+                                <img class="rounded-circle" style="width: 92px; height: 92px;"
+                                    src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
+                            </div>
                             <p class="display-4 text-center fw-bold text-white">
                                 Anatoliy Kolodkin
                             </p>
@@ -49,7 +54,9 @@
                             <hr class="m-auto mb-5"
                                 style="height:6px;width:30px;border-width:0;background-color:#F6D445;">
                             <div class="d-flex justify-content-end">
-                                <button class="btn text-light fw-bold" style="background: #333a3d;">Expande All</button>
+                                <button class="btn text-light fw-bold" data-bs-toggle="collapse"
+                                    data-bs-target=".accordion-collapse" style="background: #333a3d;">Expande
+                                    All</button>
                             </div>
                             <div class="card mb-4 mt-4 shadow border-0">
                                 <div class="card-body d-flex justify-content-end">
@@ -78,7 +85,10 @@
                                                         src="<%=require('../img/neutral.svg')%>" alt="avatar"></img>
                                                     <img class="mx-4" style="width: 50px; border-radius: 50%;"
                                                         src="<%=require('../img/sad.svg')%>" alt="avatar"></img>
-                                                    <span class="me-2">Expand</span>
+                                                    <span class="me-2 accordion-collapse collapse"
+                                                        id="collapseOne">Expand</span>
+                                                    <span class="me-2 accordion-collapse collapse show"
+                                                        id="collapseOne">Collapse</span>
                                                 </div>
                                             </div>
                                         </button>
@@ -162,7 +172,10 @@
                                                         src="<%=require('../img/neutral.svg')%>" alt="avatar"></img>
                                                     <img class="mx-4" style="width: 50px; border-radius: 50%;"
                                                         src="<%=require('../img/sad.svg')%>" alt="avatar"></img>
-                                                    <span class="me-2">Expand</span>
+                                                    <span class="me-2 accordion-collapse collapse show"
+                                                        id="collapseTwo">Expand</span>
+                                                    <span class="me-2 accordion-collapse collapse"
+                                                        id="collapseTwo">Collapse</span>
                                                 </div>
                                             </div>
                                         </button>
@@ -246,7 +259,10 @@
                                                         src="<%=require('../img/neutral.svg')%>" alt="avatar"></img>
                                                     <img class="mx-4" style="width: 50px; border-radius: 50%;"
                                                         src="<%=require('../img/sad.svg')%>" alt="avatar"></img>
-                                                    <span class="me-2">Expand</span>
+                                                    <span class="me-2 accordion-collapse collapse show"
+                                                        id="collapseThree">Expand</span>
+                                                    <span class="me-2 accordion-collapse collapse"
+                                                        id="collapseThree">Collapse</span>
                                                 </div>
                                             </div>
                                         </button>
