@@ -38,10 +38,6 @@ const config = {
       filename: "teammembers.html",
     }),
     new HtmlWebpackPlugin({
-      template: "src/templates/guide.html",
-      filename: "guide.html",
-    }),
-    new HtmlWebpackPlugin({
       template: "src/templates/myreports.html",
       filename: "myreports.html",
     }),

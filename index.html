@@ -1,43 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
     <head>
         <meta charset="utf-8" />
-        <title>Weekly Report</title>
+        <title>Launch Guide</title>
     </head>
-    <body>
+    <!-- Layout container -->
+    <body class="h-100">
 
-        <!-- Layout container -->
-        <div class="d-flex flex-row flex-fill">
+        <!-- Fixed buttons -->
+        <%= require("html-loader!./src/components/feedback-btn.html").default %>
+        <%= require("html-loader!./src/components/help-btn.html").default %>
 
-            <!-- Sidebar wrap (.sidebar) -->
-            <div class="sidebar m-0 p-0">
-
-                <!-- Sidebar -->
+        <!-- Sidebar -->
+        <div class="container-fluid">
+            <div class="row">
                 <%= require("html-loader!./src/components/sidenavmenu.html").default %>
-
             </div>
+        </div>
 
-            <!-- Header+content wrap -->
-            <div class="d-flex flex-column flex-fill m-0 p-0">
+        <!-- Content -->
+        <div class="container-fluid">
+            <div class="row d-flex flex-row-reverse">
+                <div class="col-10 p-0">
+                    <!-- Header wrap (.header) -->
+                    <div class="header m-0 p-0 d-flex flex-column justify-content-center">
+                        <!-- Header -->
+                        <img style="margin: auto;" src="<%=require('/src/img/wrlogo.png')%>" alt="Weekly Report"></img>
+                        <p class="display-4 text-center fw-bold text-white">
+                            Launch Guide
+                        </p>
+                    </div>
 
-                <!-- Header wrap (.header) -->
-                <div class="header m-0 p-0 d-flex flex-column justify-content-center">
+                    <!-- Content wrap (.mybody) -->
+                    <div class="mybody m-0 px-5 pt-4">
 
-                    <!-- Header -->
+                        <!-- Content -->
+                        <div class="col d-flex align-items-center justify-content-center">
+                        <div class="m-5 w-25">
+                            <p class="fs-4 fw-bold">Invite Your Team</p>
+                            <p class="fs-6">Click on the link below and invite your team members who directly report to you.</p>
+                            <a class="btn btn-primary fw-bold" href="invite.html">Invite Your Team</a>
+                            <!-- <button type="button" class="btn"></button> -->
+                        </div>
+                        <div class="m-5 w-25">
+                            <img src="<%=require('/src/img/1.png')%>" alt="" />
+                        </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center">
+                        <div class="m-5 w-25">
+                            <img src="<%=require('/src/img/2.png')%>" alt="" />
+                        </div>
+                        <div class="m-5 w-25">
+                            <p class="fs-4 fw-bold">Encourage Your Team to Accept Your Invitation</p>
+                            <p class="fs-6">When they receive your invitation, team members will be prompted to complete their profiles. If a team member hasn't created their profile within 24 hours, follow up with them!</p>
+                        </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center">
+                        <div class="m-5 w-25">
+                            <p class="fs-4 fw-bold">Remind Your team</p>
+                            <p class="fs-6">Every Friday, we'll automatically send your team members an email reminding them to fill out their Weekly Report. But we also encourage you to consistently request their Weekly Reports so they realize the importance of this new habit.</p>
+                        </div>
+                        <div class="m-5 w-25">
+                            <img src="<%=require('/src/img/3.png')%>" alt="" />
+                        </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center">
+                        <div class="m-5 w-25">
+                            <img src="<%=require('/src/img/4.png')%>" alt="" />
+                        </div>
+                        <div class="m-5 w-25">
+                            <p class="fs-4 fw-bold">Read Their Reports</p>
+                            <p class="fs-6">Set aside some time on Monday to read all the reports. Then reach out to any team members who need to be acknowledged for a success or supported during a difficult time. (And yes, we'll send you a reminder to read your reports each week too.)</p>
+                        </div>
+                        </div>
 
+                    </div>
 
                 </div>
-
-                <!-- Content wrap (.mybody) -->
-                <div class="mybody m-0 px-5 pt-4">
-
-                    <!-- Content -->
-
-
-                </div>
-
             </div>
-
         </div>
 
     </body>

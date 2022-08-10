@@ -1,250 +1,269 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Team Reports</title>
-    </head>
-    <body class="bg-light">
-        
-        <!-- Layout container -->
-        <div class="d-flex flex-row flex-fill">
+<html class="h-100">
 
-            <!-- Sidebar wrap (.sidebar) -->
-            <div class="sidebar m-0 p-0">
+<head>
+    <meta charset="utf-8" />
+    <title>Team Reports</title>
+</head>
 
-                <!-- Sidebar -->
-                <%= require("html-loader!../components/sidenavmenu.html").default %>
+<body class="h-100">
 
+    <!-- Fixed buttons -->
+    <%= require("html-loader!../components/feedback-btn.html").default %>
+        <%= require("html-loader!../components/help-btn.html").default %>
+
+            <!-- Sidebar -->
+            <div class="container-fluid">
+                <div class="row">
+                    <%= require("html-loader!../components/sidenavmenu.html").default %>
+                </div>
             </div>
 
-            <!-- Header+content wrap -->
-            <div class="d-flex flex-column flex-fill m-0 p-0">
+            <!-- Content -->
+            <div class="container-fluid">
+                <div class="row d-flex flex-row-reverse">
+                    <div class="col-10 p-0">
+                        <!-- Header wrap (.header) -->
+                        <div class="header m-0 p-0">
 
-                <!-- Header wrap (.header) -->
-                <div class="header m-0 p-0">
+                            <!-- Header -->
+                            <nav class="d-flex justify-content-center my-4">
+                                <div class="btn-group nav nav-pills" id="myTab" role="tablist">
+                                    <button class="nav-link btn btn-outline-primary active" id="nav-immediate-tab"
+                                        data-bs-toggle="tab" data-bs-target=".immediateTeamHeader, .immediateTeamBody"
+                                        type="radio" role="tab" aria-controls="immediateTeam"
+                                        aria-selected="true">Immediate Team</button>
+                                    <button class="nav-link btn btn-outline-primary" id="nav-extended-tab"
+                                        data-bs-toggle="tab" data-bs-target=".extendedTeamHeader, .extendedTeamBody"
+                                        type="radio" role="tab" aria-controls="extendedTeam"
+                                        aria-selected="false">Extended Team</button>
+                                </div>
+                            </nav>
 
-                    <!-- Header -->
-                    <nav class="d-flex justify-content-center my-4">
-                        <div class="btn-group nav nav-pills" id="myTab" role="tablist">
-                            <button class="nav-link btn btn-outline-primary active" id="nav-immediate-tab" data-bs-toggle="tab" data-bs-target=".immediateTeamHeader, .immediateTeamBody" type="radio" role="tab" aria-controls="immediateTeam" aria-selected="true">Immediate Team</button>
-                            <button class="nav-link btn btn-outline-primary" id="nav-extended-tab" data-bs-toggle="tab" data-bs-target=".extendedTeamHeader, .extendedTeamBody" type="radio" role="tab" aria-controls="extendedTeam" aria-selected="false">Extended Team</button>
-                        </div>
-                    </nav>
-                    
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active immediateTeamHeader" role="tabpanel" aria-labelledby="nav-immediate-tab" tabindex="0">
-                            <div class="d-flex flex-row justify-content-center">
-                                <div
-                                    class="d-flex justify-content-center align-items-center rounded-circle bg-white"
-                                    style="transform: translate(50%); width: 72px; height: 72px; z-index: 4;"
-                                >
-                                    <img class="rounded-circle" style="width: 64px; height: 64px;" src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
-                                </div>
-                                <div
-                                    class="d-flex justify-content-center align-items-center rounded-circle bg-white"
-                                    style="transform: translate(25%); width: 72px; height: 72px; z-index: 3;"
-                                >
-                                    <img class="rounded-circle" style="width: 64px; height: 64px;" src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
-                                </div>
-                                <div
-                                    class="d-flex justify-content-center align-items-center rounded-circle bg-white"
-                                    style="transform: translate(0%); width: 72px; height: 72px; z-index: 2;"
-                                >
-                                    <img class="rounded-circle" style="width: 64px; height: 64px;" src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
-                                </div>
-                                <div
-                                    class="d-flex justify-content-center align-items-center rounded-circle bg-white"
-                                    style="transform: translate(-25%); width: 72px; height: 72px;"
-                                >
-                                    <img class="rounded-circle" style="width: 64px; height: 64px;" src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
-                                </div>
-                                <div
-                                    class="d-flex justify-content-center align-items-center rounded-circle bg-white"
-                                    style="transform: translate(-50%); width: 72px; height: 72px;"
-                                >
-                                    <div
-                                        class="d-flex justify-content-center align-items-center rounded-circle"
-                                        style="background: #f6d445; width: 64px; height: 64px;"
-                                    >
-                                        <span class="fw-bold fs-5">+3</span>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active immediateTeamHeader" role="tabpanel"
+                                    aria-labelledby="nav-immediate-tab" tabindex="0">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-white"
+                                            style="transform: translate(50%); width: 72px; height: 72px; z-index: 4;">
+                                            <img class="rounded-circle" style="width: 64px; height: 64px;"
+                                                src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-white"
+                                            style="transform: translate(25%); width: 72px; height: 72px; z-index: 3;">
+                                            <img class="rounded-circle" style="width: 64px; height: 64px;"
+                                                src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-white"
+                                            style="transform: translate(0%); width: 72px; height: 72px; z-index: 2;">
+                                            <img class="rounded-circle" style="width: 64px; height: 64px;"
+                                                src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-white"
+                                            style="transform: translate(-25%); width: 72px; height: 72px;">
+                                            <img class="rounded-circle" style="width: 64px; height: 64px;"
+                                                src="<%=require('../img/mock-ava.png')%>" alt="avatar"></img>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center rounded-circle bg-white"
+                                            style="transform: translate(-50%); width: 72px; height: 72px;">
+                                            <div class="d-flex justify-content-center align-items-center rounded-circle"
+                                                style="background: #f6d445; width: 64px; height: 64px;">
+                                                <span class="fw-bold fs-5">+3</span>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <p class="fs-2 text-center text-white">
+                                        Your team <b>has not submited reports</b> this week.
+
+                                    </p>
                                 </div>
-                            </div>
 
-                            <p class="fs-2 text-center text-white">
-                                Your team <b>has not submited reports</b> this week.
-                                
-                            </p>
-                        </div>
-                        
-                        <div class="tab-pane fade extendedTeamHeader" role="tabpanel" aria-labelledby="nav-extended-tab" tabindex="0">
-                            <p class="fs-2 text-center text-white">
-                                Weekly Report History
-                            </p>
-                            <p class="fs-2 text-center text-white">
-                                Get a bigger picture of how your team has been doing over time.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Content wrap (.mybody) -->
-                <div class="mybody m-0 px-5 pt-4">
-                    
-                    <!-- Content -->
-                    <div class="container d-flex justify-content-center mb-4">
-                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                            <input type="radio" class="btn-check" name="brPeriod" id="brPrevPer" autocomplete="off" checked>
-                            <label class="btn btn-outline-primary w-auto" for="brPrevPer">Previous Period : 5/16 - 5/22</label>
-                            
-                            <input type="radio" class="btn-check" name="brPeriod" id="brCurrPer" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="brCurrPer">Current Period : 5/23 - 5/29</label>
-                            
-                            <input type="radio" class="btn-check" name="brPeriod" id="brOlderRep" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="brOlderRep">Older Reports</label>
-                        </div>
-                    </div>
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active immediateTeamBody" id="immediateTeamBody" role="tabpanel" aria-labelledby="nav-immediate-tab" tabindex="0">
-                            <div class="d-flex flex-column align-items-center">
-                                <p class="fw-bold">IMMEDIATE TEAM</p>
-                                <hr class="m-auto mb-5 yellowbrick">
-                            </div>
-                            
-                            <div class="mb-2 pe-3 d-flex flex-column align-items-end">
-                                <button type="submit" class="btn btn-primary fw-bold ">
-                                    Expand all
-                                </button>
-                            </div>
-
-                            <div class="d-flex justify-content-end mx-3 mb-2 pe-5 bg-white shadow-sm text-center">
-                                <p class="p-3 m-0">Moral</p>
-                                <p class="p-3 m-0">Stress</p>
-                                <p class="p-3 m-0 me-5">Workloader</p>
-                            </div>
-
-                            <div class="d-flex flex-row mx-3 mb-2 pe-5 bg-white shadow-sm">
-                                <div class="mx-3 my-1 p-3 rounded-circle bg-light fw-bold">
-                                    AE
-                                </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <div class="flex-row">Aleksandr Evseev</div>
-                                    <div class="flex-row">is mising a report</div>
+                                <div class="tab-pane fade extendedTeamHeader" role="tabpanel"
+                                    aria-labelledby="nav-extended-tab" tabindex="0">
+                                    <p class="fs-2 text-center text-white">
+                                        Weekly Report History
+                                    </p>
+                                    <p class="fs-2 text-center text-white">
+                                        Get a bigger picture of how your team has been doing over time.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="tab-pane fade extendedTeamBody" id="extendedTeamBody" role="tabpanel" aria-labelledby="nav-extended-tab" tabindex="0">
-                            <div class="d-flex mx-3 mb-2 pe-5 justify-content-center">
+                        <!-- Content wrap (.mybody) -->
+                        <div class="mybody m-0 px-5 pt-4">
+
+                            <!-- Content -->
+                            <div class="container d-flex justify-content-center mb-4">
                                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="brParam" id="brOverall" autocomplete="off" checked>
-                                    <label class="btn btn-outline-primary w-auto" for="brOverall">Overall</label>
-                                    
-                                    <input type="radio" class="btn-check" name="brParam" id="brMorale" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="brMorale">Morale</label>
-                                    
-                                    <input type="radio" class="btn-check" name="brParam" id="brStress" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="brStress">Stress</label>
-                                    
-                                    <input type="radio" class="btn-check" name="brParam" id="brWorkload" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="brWorkload">Workload</label>
+                                    <input type="radio" class="btn-check" name="brPeriod" id="brPrevPer"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary w-auto" for="brPrevPer">Previous Period : 5/16
+                                        - 5/22</label>
+
+                                    <input type="radio" class="btn-check" name="brPeriod" id="brCurrPer"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="brCurrPer">Current Period : 5/23 -
+                                        5/29</label>
+
+                                    <input type="radio" class="btn-check" name="brPeriod" id="brOlderRep"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="brOlderRep">Older Reports</label>
                                 </div>
                             </div>
 
-                            <div class="d-flex flex-column align-items-center">
-                                <p class="fw-bold">EXTENDED TEAM AVERAGE</p>
-                                <hr class="m-auto mb-5 yellowbrick">
-                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active immediateTeamBody" id="immediateTeamBody"
+                                    role="tabpanel" aria-labelledby="nav-immediate-tab" tabindex="0">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <p class="fw-bold">IMMEDIATE TEAM</p>
+                                        <hr class="m-auto mb-5 yellowbrick">
+                                    </div>
 
-                            <div class="border-0 mb-2 d-flex flex-row text-center">
-                                <div class="col-2"></div>
-                                <div class="col-1">9w ago</div>
-                                <div class="col-1">8w ago</div>
-                                <div class="col-1">7w ago</div>
-                                <div class="col-1">6w ago</div>
-                                <div class="col-1">5w ago</div>
-                                <div class="col-1">4w ago</div>
-                                <div class="col-1">3w ago</div>
-                                <div class="col-1">2w ago</div>
-                                <div class="col-1">1w ago</div>
-                                <div class="col-1">Current</div>
-                            </div>
+                                    <div class="mb-2 pe-3 d-flex flex-column align-items-end">
+                                        <button type="submit" class="btn btn-primary fw-bold ">
+                                            Expand all
+                                        </button>
+                                    </div>
 
-                            <div class="d-flex mx-3 mb-2 pe-5 shadow-sm fw-bold bg-white">
-                                <div class="col-2 m-3">Overall</div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                            </div>
+                                    <div
+                                        class="d-flex justify-content-end mx-3 mb-2 pe-5 bg-white shadow-sm text-center">
+                                        <p class="p-3 m-0">Moral</p>
+                                        <p class="p-3 m-0">Stress</p>
+                                        <p class="p-3 m-0 me-5">Workloader</p>
+                                    </div>
 
-                            <div class="d-flex flex-column align-items-center">
-                                <p class="fw-bold">EXTENDED TEAM</p>
-                                <hr class="m-auto mb-5 yellowbrick">
-                            </div>
-
-                            <div class="border-0 mb-2 d-flex flex-row text-center">
-                                <div class="col-2"></div>
-                                <div class="col-1">9w ago</div>
-                                <div class="col-1">8w ago</div>
-                                <div class="col-1">7w ago</div>
-                                <div class="col-1">6w ago</div>
-                                <div class="col-1">5w ago</div>
-                                <div class="col-1">4w ago</div>
-                                <div class="col-1">3w ago</div>
-                                <div class="col-1">2w ago</div>
-                                <div class="col-1">1w ago</div>
-                                <div class="col-1">Current</div>
-                            </div>
-
-                            <div class="d-flex mx-3 mb-2 pe-5 shadow-sm fw-bold bg-white">
-                                <div class="col-2 m-3">Aleksandr Evseev</div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1">
-                                    <div class="rounded-circle p-3 d-inline fw-bold bg-light border border-2 border-white ratio ratio-1x1">
-                                        <i class="bi bi-emoji-smile display-3"></i>
+                                    <div class="d-flex flex-row mx-3 mb-2 pe-5 bg-white shadow-sm">
+                                        <div class="mx-3 my-1 p-3 rounded-circle bg-light fw-bold">
+                                            AE
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <div class="flex-row">Aleksandr Evseev</div>
+                                            <div class="flex-row">is mising a report</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-1"></div>
-                                <div class="col-1">
-                                    <div class="rounded-circle p-3 d-inline fw-bold bg-light border border-2 border-white ratio ratio-1x1">
-                                        <i class="bi bi-emoji-neutral display-3"></i>
+
+                                <div class="tab-pane fade extendedTeamBody" id="extendedTeamBody" role="tabpanel"
+                                    aria-labelledby="nav-extended-tab" tabindex="0">
+                                    <div class="d-flex mx-3 mb-2 pe-5 justify-content-center">
+                                        <div class="btn-group" role="group"
+                                            aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="brParam" id="brOverall"
+                                                autocomplete="off" checked>
+                                            <label class="btn btn-outline-primary w-auto"
+                                                for="brOverall">Overall</label>
+
+                                            <input type="radio" class="btn-check" name="brParam" id="brMorale"
+                                                autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="brMorale">Morale</label>
+
+                                            <input type="radio" class="btn-check" name="brParam" id="brStress"
+                                                autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="brStress">Stress</label>
+
+                                            <input type="radio" class="btn-check" name="brParam" id="brWorkload"
+                                                autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="brWorkload">Workload</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-column align-items-center">
+                                        <p class="fw-bold">EXTENDED TEAM AVERAGE</p>
+                                        <hr class="m-auto mb-5 yellowbrick">
+                                    </div>
+
+                                    <div class="border-0 mb-2 d-flex flex-row text-center">
+                                        <div class="col-2"></div>
+                                        <div class="col-1">9w ago</div>
+                                        <div class="col-1">8w ago</div>
+                                        <div class="col-1">7w ago</div>
+                                        <div class="col-1">6w ago</div>
+                                        <div class="col-1">5w ago</div>
+                                        <div class="col-1">4w ago</div>
+                                        <div class="col-1">3w ago</div>
+                                        <div class="col-1">2w ago</div>
+                                        <div class="col-1">1w ago</div>
+                                        <div class="col-1">Current</div>
+                                    </div>
+
+                                    <div class="d-flex mx-3 mb-2 pe-5 shadow-sm fw-bold bg-white">
+                                        <div class="col-2 m-3">Overall</div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                    </div>
+
+                                    <div class="d-flex flex-column align-items-center">
+                                        <p class="fw-bold">EXTENDED TEAM</p>
+                                        <hr class="m-auto mb-5 yellowbrick">
+                                    </div>
+
+                                    <div class="border-0 mb-2 d-flex flex-row text-center">
+                                        <div class="col-2"></div>
+                                        <div class="col-1">9w ago</div>
+                                        <div class="col-1">8w ago</div>
+                                        <div class="col-1">7w ago</div>
+                                        <div class="col-1">6w ago</div>
+                                        <div class="col-1">5w ago</div>
+                                        <div class="col-1">4w ago</div>
+                                        <div class="col-1">3w ago</div>
+                                        <div class="col-1">2w ago</div>
+                                        <div class="col-1">1w ago</div>
+                                        <div class="col-1">Current</div>
+                                    </div>
+
+                                    <div class="d-flex mx-3 mb-2 pe-5 shadow-sm fw-bold bg-white">
+                                        <div class="col-2 m-3">Aleksandr Evseev</div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1">
+                                            <div
+                                                class="rounded-circle p-3 d-inline fw-bold bg-light border border-2 border-white ratio ratio-1x1">
+                                                <i class="bi bi-emoji-smile display-3"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1">
+                                            <div
+                                                class="rounded-circle p-3 d-inline fw-bold bg-light border border-2 border-white ratio ratio-1x1">
+                                                <i class="bi bi-emoji-neutral display-3"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
+                                        <div class="col-1"></div>
                                     </div>
                                 </div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
-                                <div class="col-1"></div>
                             </div>
+
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
-        </div>
+</body>
 
-    </body>
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <script>
-    $('#myTab button[data-bs-toggle="tab"]').on('show.bs.tab', function(e) {
-  let target = $(e.target).data('bs-target');
-  $(target)
-    .addClass('active show')
-    .siblings('.tab-pane.active')
-    .removeClass('active show')
-});
+    $('#myTab button[data-bs-toggle="tab"]').on('show.bs.tab', function (e) {
+        let target = $(e.target).data('bs-target');
+        $(target)
+            .addClass('active show')
+            .siblings('.tab-pane.active')
+            .removeClass('active show')
+    });
 </script>
