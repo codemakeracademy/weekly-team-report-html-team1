@@ -27,18 +27,15 @@
                         <div class="header m-0 p-0 d-flex flex-column justify-content-center">
 
                             <!-- Header -->
-                            <div class="mx-auto rounded-circle bg-light d-flex align-items-center"
-                                style="height: 100px; width: 100px">
-                                <p class="m-auto fw-bold text-center fs-1">
-                                    AK
+                            <div class="d-flex flex-column justify-content-center align-items-center text-center text-white">
+                                <img class="rounded-circle" src="<%=require('../img/mock-ava.png')%>" alt="User Icon" style="height: 100px; width: 100px;">
+                                <p class="display-4 fw-bold">
+                                    Anatoliy Kolodkin
+                                </p>
+                                <p>
+                                    anatoliy@ankosoftware.com
                                 </p>
                             </div>
-                            <p class="display-4 text-center fw-bold text-white">
-                                Anatoliy Kolodkin
-                            </p>
-                            <p class="text-center text-white">
-                                anatoliy@ankosoftware.com
-                            </p>
 
                         </div>
 
@@ -63,19 +60,19 @@
                                     <label class="form-label fw-bold">
                                         First Name
                                     </label>
-                                    <input type="text" class="form-control w-50">
+                                    <input type="text" class="form-control w-50" style="min-width:300px;">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label fw-bold">
                                         Last Name
                                     </label>
-                                    <input type="text" class="form-control w-50">
+                                    <input type="text" class="form-control w-50" style="min-width:300px;">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label fw-bold">
                                         Title
                                     </label>
-                                    <input type="text" class="form-control w-50">
+                                    <input type="text" class="form-control w-50" style="min-width:300px;">
                                 </div>
                                 <button type="submit" class="btn btn-primary fw-bold">
                                     Save
@@ -237,7 +234,7 @@
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <h3>
-                                                            Edit Leader(s)
+                                                            Edit Member(s)
                                                         </h3>
                                                         <button class="btn btn-close" type="button"
                                                             data-bs-dismiss="modal" aria-label="Close"></button>
@@ -313,7 +310,7 @@
                                     Share the following link to invite team members on Anatoliy's behalf.
                                 </p>
                                 <div class="d-flex flex-column align-items-center gap-3">
-                                    <input class="form-control w-50" type="text">
+                                    <input type="text" class="form-control w-50" value="http://localhost:8080/" readonly>
                                     <button class="btn btn-primary fw-bold">
                                         Copy Link
                                     </button>
